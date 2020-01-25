@@ -5,9 +5,13 @@ import { createMaterialBottomTabNavigator } from 'react-navigation-material-bott
 import { MapView } from 'expo';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-import ProfileMenu from './components/ProfileMenu';
-import AddMenu from './components/AddMenu';
-import SearchMenu from './components/SearchMenu';
+
+import UserMenu from './components/UserMenu';
+import ChatMenu from './components/ChatMenu';
+import TagsMenu from './components/TagsMenu';
+import WorkshopMenu from './components/WorkshopMenu';
+import SettingsMenu from './components/SettingsMenu';
+
 import Colors from './constants/Colors';
 
 
@@ -15,7 +19,7 @@ class UserScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>User</Text>
+        <UserMenu/>
       </View>
     );
   }
@@ -25,7 +29,7 @@ class ChatScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <AddMenu/>
+        <ChatMenu/>
       </View>
     );
   }
@@ -35,7 +39,7 @@ class TagsScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Tags</Text>
+        <TagsMenu/>
       </View>
     );
   }
@@ -45,7 +49,7 @@ class WorkshopScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Workshop</Text>
+        <WorkshopMenu/>
       </View>
     );
   }
@@ -55,7 +59,7 @@ class SettingsScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Settings</Text>
+        <SettingsMenu/>
       </View>
     );
   }
